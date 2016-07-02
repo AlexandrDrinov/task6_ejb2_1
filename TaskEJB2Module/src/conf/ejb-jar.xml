@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar id="ejb-jar_ID" version="2.1"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+	<display-name>TaskEJB2Module</display-name>
+	<enterprise-beans>
+		<session>
+			<ejb-name>UserSessionBean</ejb-name>
+			<home>by.epamlab.ejb.ifaces.UserHome</home>
+			<remote>by.epamlab.ejb.ifaces.UserRemote</remote>
+			<ejb-class>by.epamlab.ejb.impl.UserSessionBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+		<session>
+			<ejb-name>ReservationSessionBean</ejb-name>
+			<home>by.epamlab.ejb.ifaces.ReservationHome</home>
+			<remote>by.epamlab.ejb.ifaces.ReservationRemote</remote>
+			<ejb-class>by.epamlab.ejb.impl.ReservationSessionBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+		<session>
+			<ejb-name>ResComponentSessionBean</ejb-name>
+			<home>by.epamlab.ejb.ifaces.ResComponentHome</home>
+			<remote>by.epamlab.ejb.ifaces.ResComponentRemote</remote>
+			<ejb-class>by.epamlab.ejb.impl.ResComponentSessionBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+		<session>
+			<ejb-name>CustomerSessionBean</ejb-name>
+			<home>by.epamlab.ejb.ifaces.CustomerHome</home>
+			<remote>by.epamlab.ejb.ifaces.CustomerRemote</remote>
+			<ejb-class>by.epamlab.ejb.impl.CustomerSessionBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+		<session>
+			<ejb-name>FareFamilySessionBean</ejb-name>
+			<home>by.epamlab.ejb.ifaces.FareFamilyHome</home>
+			<remote>by.epamlab.ejb.ifaces.FareFamilyRemote</remote>
+			<ejb-class>by.epamlab.ejb.impl.FareFamilySessionBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+	</enterprise-beans>
+	<ejb-client-jar>TaskEJB2Module.jar</ejb-client-jar>
+</ejb-jar>
